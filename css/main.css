@@ -252,6 +252,14 @@ h1.nombre-sitio {
     line-height: 1;
 }
 
+.fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
 
 /*Barra*/
 

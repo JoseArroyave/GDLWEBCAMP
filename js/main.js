@@ -1,4 +1,20 @@
 var api = 'AIzaSyCDLep9qEq9PX7JVBvQjQ21yM_D3bHO8ZU'
+$(function() {
+    // Menú Fijo.
+    var windowHeight = $(window).height();
+    var barraHeight = $('.barra').innerHeight();
+
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        if (scroll > windowHeight) {
+            $('.barra').addClass('fixed');
+            $('body').css({ 'margin-top': barraHeight + 'px' });
+        } else {
+            $('.barra').removeClass('fixed');
+            $('body').css({ 'margin-top': '0px' });
+        }
+    })
+});
 
 function initMap() {
     // var latLng = { lat: 6.154528507873035, lng: -75.6064744684422 };
