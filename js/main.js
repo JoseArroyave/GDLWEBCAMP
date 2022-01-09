@@ -25,13 +25,6 @@ function initMap() {
 (function() {
     'use strict';
     document.addEventListener('DOMContentLoaded', function() {
-        var waypoint = new Waypoint({
-            element: document.getElementById('resumen-evento'),
-            handler: function(direction) {
-                alert('You have scrolled to a thing')
-            }
-        })
-        waypoint();
         // Campos datos de usuario
         var nombre = document.getElementById('nombre');
         var apellido = document.getElementById('apellido');
@@ -53,6 +46,10 @@ function initMap() {
         // Extras
         var camisas = document.getElementById('camisa_evento')
         var etiquetas = document.getElementById('etiquetas')
+        var viernes = document.getElementById('viernes')
+        var sabado = document.getElementById('sabado')
+        var domingo = document.getElementById('domingo')
+
 
         if (document.getElementById('calcular')) {
             calcular.addEventListener('click', calcularMontos)
@@ -111,15 +108,10 @@ function initMap() {
                         } else {
                             lista_productos.innerHTML += cantRegalo + ' = ¡SON GRATIS!'
                         }
-
                     }
 
                     function pagar() {
                         suma.innerHTML = '$' + totalPagar.toFixed(2);
-                    }
-
-                    function enable() {
-                        calcular.disa
                     }
 
                     resumenCompra();
@@ -130,50 +122,21 @@ function initMap() {
             }
 
             function mostrarV() {
-                var boletoDia = parseInt(pase_dia.value, 10) || 0;
-                var boleto2Dias = parseInt(pase_dosdias.value, 10) || 0;
-                var boletoCompleto = parseInt(pase_completo.value, 10) || 0;
-                var boletos = [boletoDia, boleto2Dias, boletoCompleto];
-
-                for (var i = 0; i < boletos.length; i++) {
-                    if (boletos[i] == boletoDia) {
-                        document.getElementById('viernes').style.display = 'block';
-                    } else {
-                        document.getElementById('sabado').style.display = 'none';
-                        document.getElementById('domingo').style.display = 'none';
-                    }
-                }
+                viernes.style.display = 'block';
+                sabado.style.display = 'none';
+                domingo.style.display = 'none';
             }
 
             function mostrarVS() {
-                var boletoDia = parseInt(pase_dia.value, 10) || 0;
-                var boleto2Dias = parseInt(pase_dosdias.value, 10) || 0;
-                var boletoCompleto = parseInt(pase_completo.value, 10) || 0;
-                var boletos = [boletoDia, boleto2Dias, boletoCompleto];
-
-                for (var i = 0; i < boletos.length; i++) {
-                    if (boletos[i] == boleto2Dias) {
-                        document.getElementById('viernes').style.display = 'block';
-                        document.getElementById('sabado').style.display = 'block';
-                    } else {
-                        document.getElementById('domingo').style.display = 'none';
-                    }
-                }
+                viernes.style.display = 'block';
+                sabado.style.display = 'block';
+                domingo.style.display = 'none';
             }
 
             function mostrarVSD() {
-                var boletoDia = parseInt(pase_dia.value, 10) || 0;
-                var boleto2Dias = parseInt(pase_dosdias.value, 10) || 0;
-                var boletoCompleto = parseInt(pase_completo.value, 10) || 0;
-                var boletos = [boletoDia, boleto2Dias, boletoCompleto];
-
-                for (var i = 0; i < boletos.length; i++) {
-                    if (boletos[i] == boletoCompleto) {
-                        document.getElementById('viernes').style.display = 'block';
-                        document.getElementById('sabado').style.display = 'block';
-                        document.getElementById('domingo').style.display = 'block';
-                    } else {}
-                }
+                viernes.style.display = 'block';
+                sabado.style.display = 'block';
+                domingo.style.display = 'block';
             }
 
             function validarCampos() {
