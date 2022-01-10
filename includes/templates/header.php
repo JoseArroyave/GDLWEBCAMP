@@ -28,13 +28,13 @@
   <meta name="theme-color" content="#fafafa" />
 </head>
 
-<body class="home">
+<body>
   <!-- Add your site or application content here -->
   <header class="site-header">
     <div class="hero">
       <div class="contenido-header">
         <nav class="redes-sociales">
-          <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
           <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
           <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
           <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
@@ -74,9 +74,9 @@
         <span></span>
       </div>
       <nav class="navegacion-principal clearfix">
-        <a href="index.php" class="activo">Home</a>
-        <a href="conferencia.php">Conferencia</a>
-        <a href="404.php">Calendario</a>
+        <a href="index.php">Home</a>
+        <a href="galeria.php">Galeria</a>
+        <a href="calendario.php">Calendario</a>
         <a href="404.php">Invitados</a>
         <a href="registro.php">Reservaciones</a>
       </nav>
