@@ -193,10 +193,17 @@ $(function() {
     });
 
     // Animaciones para los números
-    $('.resumen-evento li:nth-child(1) p').animateNumber({ number: 6 }, 1200)
-    $('.resumen-evento li:nth-child(2) p').animateNumber({ number: 15 }, 1200)
-    $('.resumen-evento li:nth-child(3) p').animateNumber({ number: 3 }, 1200)
-    $('.resumen-evento li:nth-child(4) p').animateNumber({ number: 9 }, 1200)
+    var resumenLista = jQuery('.resumen-evento');
+    if (resumenLista.length > 0) {
+        $('.resumen-evento').waypoint(function() {
+            $('.resumen-evento li:nth-child(1) p').animateNumber({ number: 6 }, 1200)
+            $('.resumen-evento li:nth-child(2) p').animateNumber({ number: 15 }, 1200)
+            $('.resumen-evento li:nth-child(3) p').animateNumber({ number: 3 }, 1200)
+            $('.resumen-evento li:nth-child(4) p').animateNumber({ number: 9 }, 1200)
+        }, {
+            offset: '60%'
+        })
+    }
 
     // Cuenta regresiva
     $('.cuenta-regresiva').countdown('2022/12/10 09:00:00', function(event) {
@@ -205,4 +212,20 @@ $(function() {
         $('#minutos').html(event.strftime('%M'));
         $('#segundos').html(event.strftime('%S'));
     })
+});
+
+$(function() {
+    var loc = window.location.href; // returns the full URL
+    if (/index/.test(loc)) {
+        $('.navegacion-principal a:nth-child(1)').addClass('activoNavegacion');
+    } else if (/galeria/.test(loc)) {
+        $('.navegacion-principal a:nth-child(2)').addClass('activoNavegacion');
+    } else if (/calendario/.test(loc)) {
+        $('.navegacion-principal a:nth-child(3)').addClass('activoNavegacion');
+    } else if (/invitados/.test(loc)) {
+        $('.navegacion-principal a:nth-child(4)').addClass('activoNavegacion');
+    } else if (/registro/.test(loc)) {
+        $('.navegacion-principal a:nth-child(5)').removeClass('registro');
+        $('.navegacion-principal a:nth-child(5)').addClass('activoRegistro');
+    }
 });

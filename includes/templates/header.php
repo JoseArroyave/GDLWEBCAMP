@@ -18,6 +18,7 @@
 
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/lightbox.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -78,7 +79,7 @@
         <a href="galeria.php">Galeria</a>
         <a href="calendario.php">Calendario</a>
         <a href="404.php">Invitados</a>
-        <a href="registro.php">Reservaciones</a>
+        <a class="registro" href="registro.php">Reservaciones</a>
       </nav>
     </div>
     <!--.contenedor-->

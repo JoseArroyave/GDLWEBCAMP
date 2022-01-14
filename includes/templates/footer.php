@@ -34,6 +34,7 @@
   <script src="js/jQuery.js"></script>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
+  <script src="js/lightbox.js"></script>
   <script src="js/jquery.animateNumber.js"></script>
   <script src="js/jquery.countdown.min.js"></script>
   <script src="js/jquery.lettering.js"></script>
