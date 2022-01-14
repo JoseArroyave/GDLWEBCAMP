@@ -173,52 +173,52 @@ h1.nombre-sitio span {
     .char1:hover {
         top: 20px;
         right: 20px;
-        color: #e33000;
+        color: #fe4918;
     }
     .char2:hover {
         top: 0px;
         left: -20px;
-        color: #e33000;
+        color: #fe4918;
     }
     .char3:hover {
         top: 10px;
         right: 20px;
-        color: #e33000;
+        color: #fe4918;
     }
     .char4:hover {
         top: 5px;
         right: 10px;
-        color: #e33000;
+        color: #fe4918;
     }
     .char5:hover {
         top: 15px;
         right: 10px;
-        color: #e33000;
+        color: #fe4918;
     }
     .char6:hover {
         top: 5px;
         left: 10px;
-        color: #e33000;
+        color: #fe4918;
     }
     .char7:hover {
         top: 20px;
         left: -10px;
-        color: #e33000;
+        color: #fe4918;
     }
     .char8:hover {
         top: 0px;
         left: 10px;
-        color: #e33000;
+        color: #fe4918;
     }
     .char9:hover {
         top: 10px;
         right: 20px;
-        color: #e33000;
+        color: #fe4918;
     }
     .char10:hover {
         top: 20px;
         right: 20px;
-        color: #e33000;
+        color: #fe4918;
     }
 }
 
