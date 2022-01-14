@@ -1,10 +1,11 @@
 <?php
 include_once 'includes/templates/header.php';
 ?>
-<section class="seccion contenedor">
-  <h2>Registro de usuarios</h2>
+<section class="seccion contenedor" id="reservas">
+
   <form action="index.html" class="registro" id="registro" method='post'>
     <div id="datos_usuario" class="registro caja clearfix">
+      <h2>Registro de usuarios</h2>
       <div class="campo">
         <label for="nombre">Nombre<span>*</span></label>
         <input type="text" name="nombre" placeholder="Tu nombre" id="nombre" required>
@@ -20,8 +21,8 @@ include_once 'includes/templates/header.php';
       <div id="error"></div>
     </div>
     <!--#datos_usuario-->
-    <div class="paquetes" id="paquetes">
-      <h3>Elige el número de boletos<span>*</span></h3>
+    <div class="paquetes caja" id="paquetes">
+      <h2>Elige el número de boletos</h2>
       <ul class="lista-precios clearfix">
         <li>
           <div class="tabla-precio">
@@ -70,8 +71,8 @@ include_once 'includes/templates/header.php';
       </ul>
     </div>
     <div id="eventos" class="eventos clearfix">
-      <h3>Elige tus talleres</h3>
       <div class="caja">
+        <h2>Elige tus talleres</h2>
         <div id="viernes" class="contenido-dia clearfix">
           <h4>Viernes</h4>
           <div>
@@ -146,8 +147,8 @@ include_once 'includes/templates/header.php';
     </div>
     <!--#eventos-->
     <div id="resumen" class="resumen">
-      <h3>Pago y extras</h3>
       <div class="caja clearfix">
+        <h2>Pago y extras</h2>
         <div class="extras">
           <div id="orden">
             <label for="camisa_evento">Camisa del evento $10<small> (promoción 7% dto.)</small></label> <br>

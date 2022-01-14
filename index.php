@@ -54,7 +54,7 @@
                 <i class="fa fa-user" aria-hidden="true"></i> Juan Pablo de la Torre Valdéz
               </p>
             </div>
-            <a href="#" class="button float-right">Ver todos</a>
+            <a href="calendario.php#calendario" class="button float-right">Ver todos</a>
           </div>
           <!--#talleres-->
           <div id="conferencias" class="info-curso ocultar clearfix">
@@ -78,7 +78,7 @@
                 <i class="fa fa-user" aria-hidden="true"></i> Susan Sánchez
               </p>
             </div>
-            <a href="#" class="button float-right">Ver todos</a>
+            <a href="calendario.php#calendario" class="button float-right">Ver todos</a>
           </div>
           <!--#conferencias-->
           <div id="seminarios" class="info-curso ocultar clearfix">
@@ -102,7 +102,7 @@
                 <i class="fa fa-user" aria-hidden="true"></i> Susana Rivera
               </p>
             </div>
-            <a href="#" class="button float-right">Ver todos</a>
+            <a href="calendario.php#calendario" class="button float-right">Ver todos</a>
           </div>
           <!--#seminarios-->
         </div>
@@ -194,7 +194,7 @@
               <li>Todas las conferencias</li>
               <li>Todos los talleres</li>
             </ul>
-            <a href="#" class="button hollow">Comprar</a>
+            <a href="registro.php#reservas" class="button hollow">Comprar</a>
           </div>
         </li>
         <li>
@@ -206,7 +206,7 @@
               <li>Todas las conferencias</li>
               <li>Todos los talleres</li>
             </ul>
-            <a href="#" class="button">Comprar</a>
+            <a href="registro.php#reservas" class="button">Comprar</a>
           </div>
         </li>
         <li>
@@ -218,7 +218,7 @@
               <li>Todas las conferencias</li>
               <li>Todos los talleres</li>
             </ul>
-            <a href="#" class="button hollow">Comprar</a>
+            <a href="registro.php#reservas" class="button hollow">Comprar</a>
           </div>
         </li>
       </ul>

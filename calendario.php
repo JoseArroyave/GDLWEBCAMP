@@ -2,7 +2,7 @@
 include_once 'includes/templates/header.php';
 ?>
 
-<section class="seccion contenedor">
+<section class="seccion contenedor" id="calendario">
   <h2>Calendario de eventos</h2>
   <?php
   try {

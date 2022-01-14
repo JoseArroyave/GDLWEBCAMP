@@ -142,7 +142,7 @@ function initMap() {
             function validarCampos() {
                 if (this.value == '') {
                     errorDiv.style.display = 'block';
-                    errorDiv.innerHTML = 'Este campo es obligatorio'
+                    errorDiv.innerHTML = 'Estos campo son obligatorios'
                     this.style.backgroundColor = '#fcc4c0'
                 } else {
                     this.style.backgroundColor = '#ffffff'
