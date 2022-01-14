@@ -224,8 +224,5 @@ $(function() {
         $('.navegacion-principal a:nth-child(3)').addClass('activoNavegacion');
     } else if (/invitados/.test(loc)) {
         $('.navegacion-principal a:nth-child(4)').addClass('activoNavegacion');
-    } else if (/registro/.test(loc)) {
-        $('.navegacion-principal a:nth-child(5)').removeClass('registro');
-        $('.navegacion-principal a:nth-child(5)').addClass('activoRegistro');
     }
 });

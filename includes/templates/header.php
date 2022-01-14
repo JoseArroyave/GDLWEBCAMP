@@ -69,17 +69,19 @@
           <img src="img/logo.svg" alt="logo gdlwebcamp" />
         </a>
       </div>
+      <div class="menu-padre">
       <div class="menu-movil clearfix">
         <span></span>
         <span></span>
         <span></span>
+      </div>
       </div>
       <nav class="navegacion-principal clearfix">
         <a href="index.php">Home</a>
         <a href="galeria.php">Galeria</a>
         <a href="calendario.php">Calendario</a>
         <a href="404.php">Invitados</a>
-        <a class="registro" href="registro.php">Reservaciones</a>
+        <a href="registro.php">Reservaciones</a>
       </nav>
     </div>
     <!--.contenedor-->

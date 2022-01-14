@@ -335,7 +335,7 @@ div.logo img {
     width: 100%;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 903px) {
     div.logo {
         width: 33%;
     }
@@ -350,8 +350,7 @@ nav.navegacion-principal {
 }
 
 .activoNavegacion {
-    color: #ffffff;
-    background-color: #fe4918;
+    border-bottom: 2px solid #fe4918;
 }
 
 nav.navegacion-principal a {
@@ -364,30 +363,24 @@ nav.navegacion-principal a {
     width: 100%;
     display: inline-block;
     text-align: center;
-    margin-bottom: 20px;
     border-radius: 15px;
 }
 
 nav.navegacion-principal a:hover {
-    background-color: #fe4918;
-}
-
-.activoRegistro {
-    background-color: #fe4918;
-    color: #ffffff;
-}
-
-nav.navegacion-principal .registro {
-    border: 2px solid #fe4918;
     color: #fe4918;
+}
+
+nav.navegacion-principal a:last-child {
+    color: #ffffff;
+    background-color: #fe4918;
     border-radius: 15px;
 }
 
-nav.navegacion-principal .registro:hover {
-    color: white;
+nav.navegacion-principal a:last-child:hover {
+    background-color: #e33000;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 903px) {
     nav.navegacion-principal {
         width: 67%;
         text-align: right;
@@ -399,28 +392,8 @@ nav.navegacion-principal .registro:hover {
         display: inline-block;
         width: auto;
         text-align: center;
-        margin: 0 10px 0 0;
     }
 }
-
-
-/* @media screen and (min-width:768px) {
-    nav.navegacion-principal {
-        width: 67%;
-        text-align: right;
-        display: flex;
-        justify-content: center;
-    }
-} */
-
-
-/* nav.navegacion-principal a {
-    padding: 10px 10px;
-    display: block;
-    width: auto;
-    text-align: center;
-    margin: 0 10px 0 0;
-} */
 
 
 /* Menú móvil*/
@@ -443,8 +416,32 @@ div.menu-movil span {
     display: block;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 903px) {
     div.menu-movil {
+        display: none;
+    }
+}
+
+div.menu-padre {
+    width: 60px;
+    display: block;
+    float: right;
+    margin-top: 12px;
+}
+
+div.menu-padre:hover {
+    cursor: pointer;
+}
+
+div.menu-padre span {
+    height: 8px;
+    margin-bottom: 6px;
+    background-color: white;
+    display: block;
+}
+
+@media screen and (min-width: 903px) {
+    div.menu-padre {
         display: none;
     }
 }
