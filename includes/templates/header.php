@@ -18,14 +18,25 @@
 
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/font-awesome.min.css" />
-  <link rel="stylesheet" href="css/lightbox.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/main.css" />
 
+  <?php
+  $archivo = basename($_SERVER['PHP_SELF']);
+  $pagina = str_replace('.php', '', $archivo);
+  if ($pagina == 'invitados') {
+    echo '<link rel="stylesheet" href="css/colorbox.css">';
+  } else if ($pagina == 'galeria') {
+    echo '<link rel="stylesheet" href="css/lightbox.css" />';
+  } else if ($pagina == 'index') {
+    echo '<link rel="stylesheet" href="css/colorbox.css">';
+  }
+  ?>
+
+  <link rel="stylesheet" href="css/main.css" />
   <meta name="theme-color" content="#fafafa" />
 </head>
 
@@ -70,17 +81,17 @@
         </a>
       </div>
       <div class="menu-padre">
-      <div class="menu-movil clearfix">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+        <div class="menu-movil clearfix">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
       <nav class="navegacion-principal clearfix">
         <a href="index.php">Home</a>
         <a href="galeria.php">Galeria</a>
         <a href="calendario.php">Calendario</a>
-        <a href="404.php">Invitados</a>
+        <a href="invitados.php">Invitados</a>
         <a href="registro.php">Reservaciones</a>
       </nav>
     </div>

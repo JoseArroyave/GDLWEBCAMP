@@ -363,7 +363,7 @@ nav.navegacion-principal a {
     width: 100%;
     display: inline-block;
     text-align: center;
-    border-radius: 15px;
+    margin-left: 2px;
 }
 
 nav.navegacion-principal a:hover {
@@ -372,12 +372,12 @@ nav.navegacion-principal a:hover {
 
 nav.navegacion-principal a:last-child {
     color: #ffffff;
-    background-color: #fe4918;
     border-radius: 15px;
+    background-color: #fe4918;
 }
 
 nav.navegacion-principal a:last-child:hover {
-    background-color: #e33000;
+    background-color: rgb(227, 48, 0, 0.5);
 }
 
 @media screen and (min-width: 903px) {
@@ -795,7 +795,6 @@ div.tabla-precio p.numero {
 
 div.mapa {
     height: 420px;
-    background-color: green;
 }
 
 
@@ -1199,6 +1198,14 @@ div.dia p {
 
 div.dia i {
     color: #fe4918;
+}
+
+
+/* Colorbox */
+
+div.cboxElement {
+    padding: 30px!important;
+    text-align: center;
 }
 
 

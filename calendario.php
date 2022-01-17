@@ -6,7 +6,7 @@ include_once 'includes/templates/header.php';
   <h2>Calendario de eventos</h2>
   <?php
   try {
-    require_once('includes/functions/bd_conexion.php');
+    require_once('includes/functions/bd_conexion.php');   
     $sql = "SELECT id_evento, nombre_evento,fecha_evento,hora_evento,cat_evento,icono,nombre_invitado,apellido_invitado ";
     $sql .= "FROM eventos ";
     $sql .= "INNER JOIN categoria_evento ";
