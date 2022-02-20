@@ -350,7 +350,7 @@ nav.navegacion-principal {
 }
 
 .activoNavegacion {
-    border-bottom: 2px solid #fe4918;
+    border-bottom: 3px solid #fe4918;
 }
 
 nav.navegacion-principal a {
@@ -364,6 +364,7 @@ nav.navegacion-principal a {
     display: inline-block;
     text-align: center;
     margin-left: 2px;
+    border-radius: 15px;
 }
 
 nav.navegacion-principal a:hover {
