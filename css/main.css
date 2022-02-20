@@ -378,7 +378,7 @@ nav.navegacion-principal a:last-child {
 }
 
 nav.navegacion-principal a:last-child:hover {
-    background-color: rgb(227, 48, 0, 0.5);
+    background-color: #8c321a;
 }
 
 @media screen and (min-width: 903px) {
@@ -877,6 +877,18 @@ footer.info-testimonial cite span {
 
 /*Newsletter*/
 
+#mc_embed_signup .clear.foot .button {
+    background-color: #fe4918;
+    font-family: "Oswald", sans-serif;
+    font-size: .9em;
+    cursor: pointer;
+}
+
+#mc_embed_signup .clear.foot .button:hover {
+    background-color: #8c321a;
+}
+
+
 div.newsletter {
     position: relative;
     height: auto;
@@ -889,7 +901,7 @@ div.newsletter {
 
 div.newsletter .contenido {
     padding: 100px 0;
-    color: #ffffff;
+    color: #ffffff; 
     text-align: center;
     position: relative;
 }

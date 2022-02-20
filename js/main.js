@@ -237,7 +237,9 @@ $(function () {
 
   // Colorbox
   $('.invitado-info').colorbox({ inline: true, width: "50%" });
-});
+  /* colorbox pop-up newsletter */
+/*   $('.boton_newsletter').colorbox({ inline: true, width: "50%" });
+ */});
 
 $(function () {
   var loc = window.location.href; // returns the full URL

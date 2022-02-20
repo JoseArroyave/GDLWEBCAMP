@@ -231,9 +231,21 @@ include_once 'includes/templates/header.php';
 
 <div class="newsletter parallax">
   <div class="contenido contenedor">
-    <p>Regístrate al newsletter</p>
-    <h3>gdlwebcamp</h3>
-    <a href="#" class="button transparente">Registro</a>
+    <h2>Regístrate al newsletter</h2>
+    <!-- <a href="#mc_embed_signup" class="boton_newsletter button transparente">Registro</a> -->
+    <!-- boton newsletter pop-up -->
+    <div id="mc_embed_signup">
+      <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7_dtp.css" rel="stylesheet" type="text/css">
+      <form action="https://hotmail.us14.list-manage.com/subscribe/post?u=351981af674a2a0232bd493e7&amp;id=e7724c3525" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div id="mc_embed_signup_scroll">
+          <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email" style="border: 1px solid #fe4918" required>
+          <input style="position: absolute; left: -5000px;" aria-hidden="true" type="text" name="b_351981af674a2a0232bd493e7_e7724c3525" tabindex="-1" value="">
+          <div class="clear foot">
+            <input type="submit" value="Subscríbete" name="subscribe" id="mc-embedded-subscribe" class="button">
+          </div>
+        </div>
+      </form>
+    </div>
   </div>
   <!--.contenido contenedor-->
 </div>
