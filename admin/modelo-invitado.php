@@ -3,7 +3,7 @@
 include_once 'funciones/funciones.php';
 
 if ($_POST['invitado'] == 'nuevo') {
-  die(json_encode($_POST));
+  // die(json_encode($_POST));
   $nombre = $_POST['nombre_invitado'];
   $apellido = $_POST['apellido_invitado'];
   $descripcion = $_POST['descripcion_invitado'];
@@ -46,7 +46,7 @@ if ($_POST['invitado'] == 'nuevo') {
 }
 
 if ($_POST['invitado'] == 'actualizar') {
-  die(json_encode($_POST));
+  // die(json_encode($_POST));
   $id = $_POST['id_invitado'];
   $nombre = $_POST['nombre_invitado'];
   $apellido = $_POST['apellido_invitado'];
@@ -88,7 +88,7 @@ if ($_POST['invitado'] == 'actualizar') {
 }
 
 if ($_POST['invitado'] == 'eliminar') {
-  die(json_encode($_POST));
+  // die(json_encode($_POST));
   $id_borrar = $_POST['id'];
 
   try {
