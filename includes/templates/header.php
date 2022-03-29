@@ -1,3 +1,21 @@
+<?php
+// Definir un nombre para cachear
+$archivo = basename($_SERVER['PHP_SELF']);
+$pagina = str_replace(".php", "", $archivo);
+
+// Definir archivo para cachear (puede ser .php también)
+$archivoCache = 'cache/' . $pagina . '.html';
+// Cuanto tiempo deberá estar este archivo almacenado
+$tiempo = 36000;
+// Checar que el archivo exista, el tiempo sea el adecuado y muestralo
+if (file_exists($archivoCache) && time() - $tiempo < filemtime($archivoCache)) {
+  include($archivoCache);
+  exit;
+}
+// Si el archivo no existe, o el tiempo de cacheo ya se venció genera uno nuevo
+ob_start();
+?>
+
 <!DOCTYPE html>
 <html class="no-js" lang="">
 
@@ -16,8 +34,8 @@
   <link rel="apple-touch-icon" href="img/favicon.ico" />
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -30,7 +48,7 @@
   if ($pagina == 'invitados') {
     echo '<link rel="stylesheet" href="css/colorbox.css">';
   } else if ($pagina == 'galeria') {
-    echo '<link rel="stylesheet" href="css/lightbox.css" />';
+    echo '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA==" crossorigin="anonymous" referrerpolicy="no-referrer" />';
   } else if ($pagina == 'index') {
     echo '<link rel="stylesheet" href="css/colorbox.css">';
   }

@@ -26,11 +26,11 @@
 </footer>
 <!--.site-footer-->
 
-<script src="js/jQuery.js"></script>
-<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" integrity="sha512-3n19xznO0ubPpSwYCRRBgHh63DrV+bdZfHK52b1esvId4GsfwStQNPJFjeQos2h3JwCmZl0/LgLxSKMAI55hgw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="js/plugins.js"></script>
-<script src="js/jquery.countdown.min.js"></script>
-<script src="js/jquery.lettering.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js" integrity="sha512-lteuRD+aUENrZPTXWFRPTBcDDxIGWe5uu0apPEn+3ZKYDwDaEErIK9rvR0QzUGmUQ55KFE2RqGTVoZsKctGMVw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js" integrity="sha512-9ex1Kp3S7uKHVZmQ44o5qPV6PnP8/kYp8IpUHLDJ+GZ/qpKAqGgEEH7rhYlM4pTOSs/WyHtPubN2UePKTnTSww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="js/cotizador.js"></script>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -38,14 +38,14 @@
 $archivo = basename($_SERVER['PHP_SELF']);
 $pagina = str_replace('.php', '', $archivo);
 if ($pagina == 'invitados') {
-  echo '<script src="js/jquery.colorbox-min.js"></script>';
+  echo '<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js" integrity="sha512-DAVSi/Ovew9ZRpBgHs6hJ+EMdj1fVKE+csL7mdf9v7tMbzM1i4c/jAvHE8AhcKYazlFl7M8guWuO3lDNzIA48A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>';
 } else if ($pagina == 'galeria') {
-  echo '<script src="js/lightbox.js"></script>';
+  echo '<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js" integrity="sha512-k2GFCTbp9rQU412BStrcD/rlwv1PYec9SNrkbQlo6RZCf75l6KcC3UwDY8H5n5hl4v77IDtIPwOk9Dqjs/mMBQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>';
 } else if ($pagina == 'index') {
-  echo '<script src="js/jquery.waypoints.min.js"></script>';
-  echo '<script src="js/jquery.animateNumber.js"></script>';
+  echo '<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>';
+  echo '<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-animateNumber/0.0.14/jquery.animateNumber.min.js" integrity="sha512-WY7Piz2TwYjkLlgxw9DONwf5ixUOBnL3Go+FSdqRxhKlOqx9F+ee/JsablX84YBPLQzUPJsZvV88s8YOJ4S/UA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>';
   echo '<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDLep9qEq9PX7JVBvQjQ21yM_D3bHO8ZU&callback=initMap" async></script>';
-  echo '<script src="js/jquery.colorbox-min.js"></script>';
+  echo '<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js" integrity="sha512-DAVSi/Ovew9ZRpBgHs6hJ+EMdj1fVKE+csL7mdf9v7tMbzM1i4c/jAvHE8AhcKYazlFl7M8guWuO3lDNzIA48A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>';
 }
 ?>
 
@@ -64,6 +64,15 @@ if ($pagina == 'invitados') {
   ga("send", "pageview");
 </script>
 <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+<?php
+// Guarda todo el contenido a un archivo
+$fp = fopen($archivoCache, 'w');
+fwrite($fp, ob_get_contents());
+fclose($fp);
+// Enviar al navegador
+ob_end_flush();
+?>
 </body>
 
 </html>
