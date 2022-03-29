@@ -30,3 +30,10 @@
   <!-- SweetAlert2 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css">
 </head>
+
+<body>
+  <!-- Preloader -->
+  <div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__wobble" src="img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+  </div>
+</body>

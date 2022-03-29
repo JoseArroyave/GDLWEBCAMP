@@ -106,7 +106,7 @@ if ($_POST['registro'] == 'actualizar') {
 }
 
 if ($_POST['registro'] == 'login') {
-  die(json_encode($_POST));
+  // die(json_encode($_POST));
   $usuario = $_POST['usuario'];
   $password = $_POST['password'];
 
@@ -114,7 +114,7 @@ if ($_POST['registro'] == 'login') {
     $stmt = $conn->prepare("SELECT * FROM admins WHERE usuario = ?;");
     $stmt->bind_param("s", $usuario);
     $stmt->execute();
-    $stmt->bind_result($id_admin, $usuario_admin, $nombre_admin, $password_admin, $superuser, $editado);
+    $stmt->bind_result($id_admin, $usuario_admin, $nombre_admin, $password_admin, $superuser, $editado, $foto);
     if ($stmt->affected_rows) {
       $existe = $stmt->fetch();
       if ($existe) {
@@ -124,6 +124,7 @@ if ($_POST['registro'] == 'login') {
           $_SESSION['usuario'] = $usuario_admin;
           $_SESSION['nombre'] = $nombre_admin;
           $_SESSION['superuser'] = $superuser;
+          $_SESSION['foto'] = $foto;
 
           $respuesta = array(
             'respuesta' => 'exitoso',
