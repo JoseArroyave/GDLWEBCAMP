@@ -45,7 +45,7 @@ endif;
 <section class="seccion contenedor" id="reservas">
   <?php if (isset($_GET['exitoso'])) :
     if ($_GET['exitoso'] == "1") :
-      echo "<h2>Resumen registro</h2>";
+      echo '<h2>' . 'Resumen registro' . '</h2>';
     endif;
   endif; ?>
 </section>

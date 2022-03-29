@@ -6,7 +6,7 @@ $pagina = str_replace(".php", "", $archivo);
 // Definir archivo para cachear (puede ser .php también)
 $archivoCache = 'cache/' . $pagina . '.html';
 // Cuanto tiempo deberá estar este archivo almacenado
-$tiempo = 60;
+$tiempo = 1800;
 // Checar que el archivo exista, el tiempo sea el adecuado y muestralo
 if (file_exists($archivoCache) && time() - $tiempo < filemtime($archivoCache)) {
   include($archivoCache);
