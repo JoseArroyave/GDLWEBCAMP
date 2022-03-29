@@ -43,10 +43,9 @@ endif;
 ?>
 <?php include_once 'includes/templates/header.php'; ?>
 <section class="seccion contenedor" id="reservas">
-  <h2>Resumen registro</h2>
   <?php if (isset($_GET['exitoso'])) :
     if ($_GET['exitoso'] == "1") :
-      echo "Registro exitoso";
+      echo "<h2>Resumen registro</h2>";
     endif;
   endif; ?>
 </section>
