@@ -7,12 +7,7 @@
       </p>
     </div>
     <div class="ultimos-tweets">
-      <h3>Últimos <span>tweets</span></h3>
-      <ul>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-      </ul>
+      <a class="twitter-timeline" data-width="366" data-height="138" data-theme="dark" href="https://twitter.com/JoseArroyaveR?ref_src=twsrc%5Etfw"></a>
     </div>
     <div class="menu">
       <h3>Redes <span>sociales</span></h3>
@@ -28,31 +23,6 @@
   <!--.contenedor clearfix-->
   <p class="copyright">Todos los derechos reservados GDLWEBCAMP 2022.</p>
 
-<!--   <div style="display: none;"> 
-    <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7_dtp.css" rel="stylesheet" type="text/css">
-    <style type="text/css">
-      #mc_embed_signup {
-        background: #fff;
-        clear: left;
-        font: 14px Helvetica, Arial, sans-serif;
-        width: 100%;
-      }
-    </style>
-    <div id="mc_embed_signup">
-      <form action="https://hotmail.us14.list-manage.com/subscribe/post?u=351981af674a2a0232bd493e7&amp;id=e7724c3525" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        <div id="mc_embed_signup_scroll">
-          <label for="mce-EMAIL">Subscribe</label>
-          <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_351981af674a2a0232bd493e7_e7724c3525" tabindex="-1" value=""></div>
-          <div class="clear foot">
-            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-          </div>
-          <p><a href="http://eepurl.com/hVfVK5" title="Mailchimp - email marketing made easy and fun"><img class="referralBadge" src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a></p>
-        </div>
-      </form>
-    </div>
-  </div> -->
-
 </footer>
 <!--.site-footer-->
 
@@ -61,6 +31,8 @@
 <script src="js/plugins.js"></script>
 <script src="js/jquery.countdown.min.js"></script>
 <script src="js/jquery.lettering.js"></script>
+<script src="js/cotizador.js"></script>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <?php
 $archivo = basename($_SERVER['PHP_SELF']);

@@ -7,8 +7,9 @@ function productos_json(&$boletos, &$camisas = 0, &$etiquetas = 0) { // Pasar po
   // Usa los valores del primer parámetro como llaves y los valores del segundo, como valores
   $json = array();
   foreach($total_boletos as $key => $boletos):
-    if ((int) $boletos > 0):
-      $json[$key] = (int) $boletos;
+    $cant_boletos = $boletos['cantidad'];
+    if ((int) $cant_boletos > 0):
+      $json[$key] = (int) $cant_boletos;
     endif;
   endforeach;
 
@@ -33,4 +34,3 @@ function eventos_json (&$eventos) {
 
   return json_encode($eventos_json);
   }
-?>

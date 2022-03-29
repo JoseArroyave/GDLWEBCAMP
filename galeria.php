@@ -4,26 +4,14 @@ include_once 'includes/templates/header.php';
 <section class="seccion contenedor">
   <h2>Galería de fotos</h2>
   <div class="galeria">
-    <a href="img/galeria/01.jpg" data-lightbox="galeria"><img src="img/galeria/thumbs/01.jpg" alt=""></a>
-    <a href="img/galeria/02.jpg" data-lightbox="galeria"><img src="img/galeria/thumbs/02.jpg" alt=""></a>
-    <a href="img/galeria/03.jpg" data-lightbox="galeria"><img src="img/galeria/thumbs/03.jpg" alt=""></a>
-    <a href="img/galeria/04.jpg" data-lightbox="galeria"><img src="img/galeria/thumbs/04.jpg" alt=""></a>
-    <a href="img/galeria/05.jpg" data-lightbox="galeria"><img src="img/galeria/thumbs/05.jpg" alt=""></a>
-    <a href="img/galeria/06.jpg" data-lightbox="galeria"><img src="img/galeria/thumbs/06.jpg" alt=""></a>
-    <a href="img/galeria/07.jpg" data-lightbox="galeria"><img src="img/galeria/thumbs/07.jpg" alt=""></a>
-    <a href="img/galeria/08.jpg" data-lightbox="galeria"><img src="img/galeria/thumbs/08.jpg" alt=""></a>
-    <a href="img/galeria/09.jpg" data-lightbox="galeria"><img src="img/galeria/thumbs/09.jpg" alt=""></a>
-    <a href="img/galeria/10.jpg" data-lightbox="galeria"><img src="img/galeria/thumbs/10.jpg" alt=""></a>
-    <a href="img/galeria/11.jpg" data-lightbox="galeria"><img src="img/galeria/thumbs/11.jpg" alt=""></a>
-    <a href="img/galeria/12.jpg" data-lightbox="galeria"><img src="img/galeria/thumbs/12.jpg" alt=""></a>
-    <a href="img/galeria/13.jpg" data-lightbox="galeria"><img src="img/galeria/thumbs/13.jpg" alt=""></a>
-    <a href="img/galeria/14.jpg" data-lightbox="galeria"><img src="img/galeria/thumbs/14.jpg" alt=""></a>
-    <a href="img/galeria/15.jpg" data-lightbox="galeria"><img src="img/galeria/thumbs/15.jpg" alt=""></a>
-    <a href="img/galeria/16.jpg" data-lightbox="galeria"><img src="img/galeria/thumbs/16.jpg" alt=""></a>
-    <a href="img/galeria/17.jpg" data-lightbox="galeria"><img src="img/galeria/thumbs/17.jpg" alt=""></a>
-    <a href="img/galeria/18.jpg" data-lightbox="galeria"><img src="img/galeria/thumbs/18.jpg" alt=""></a>
-    <a href="img/galeria/19.jpg" data-lightbox="galeria"><img src="img/galeria/thumbs/19.jpg" alt=""></a>
-    <a href="img/galeria/20.jpg" data-lightbox="galeria"><img src="img/galeria/thumbs/20.jpg" alt=""></a>
+    <?php
+    for ($i = 0; $i < 21; $i++) {
+      if ($i < 10) { ?>
+        <a href="img/galeria/0<?php echo $i ?>.jpg" data-lightbox="galeria"><img src="img/galeria/thumbs/0<?php echo $i ?>.jpg" alt=""></a>
+      <?php } else { ?>
+        <a href="img/galeria/<?php echo $i ?>.jpg" data-lightbox="galeria"><img src="img/galeria/thumbs/<?php echo $i ?>.jpg" alt=""></a>
+    <?php }
+    } ?>
   </div>
 </section>
 <?php

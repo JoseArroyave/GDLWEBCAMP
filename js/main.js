@@ -46,9 +46,9 @@ function initMap() {
     // Extras
     var camisas = document.getElementById('camisa_evento')
     var etiquetas = document.getElementById('etiquetas')
-    var viernes = document.getElementById('viernes')
-    var sabado = document.getElementById('sabado')
-    var domingo = document.getElementById('domingo')
+    var Friday = document.getElementById('Friday')
+    var Saturday = document.getElementById('Saturday')
+    var Sunday = document.getElementById('Sunday')
 
     btnRegistro.disabled = true;
 
@@ -144,21 +144,21 @@ function initMap() {
       }
 
       function mostrarV() {
-        viernes.style.display = 'block';
-        sabado.style.display = 'none';
-        domingo.style.display = 'none';
+        Friday.style.display = 'block';
+        Saturday.style.display = 'none';
+        Sunday.style.display = 'none';
       }
 
       function mostrarVS() {
-        viernes.style.display = 'block';
-        sabado.style.display = 'block';
-        domingo.style.display = 'none';
+        Friday.style.display = 'block';
+        Saturday.style.display = 'block';
+        Sunday.style.display = 'none';
       }
 
       function mostrarVSD() {
-        viernes.style.display = 'block';
-        sabado.style.display = 'block';
-        domingo.style.display = 'block';
+        Friday.style.display = 'block';
+        Saturday.style.display = 'block';
+        Sunday.style.display = 'block';
       }
 
       function validarCampos() {
