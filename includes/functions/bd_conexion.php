@@ -1,9 +1,9 @@
 <?php
 // $conn = new mysqli(URL, USERNAME, PASSWORD, 'DATABASE ID');
-$url = 'kutnpvrhom7lki7u.cbetxkdyhwsb.us-east-1.rds.amazonaws.com';
-$username = 'x3gibc7zmsfresxr';
-$password = 'i3m6nobc78t2rtyo';
-$database = 'gqdytjbo00dyuv2j';
+$url = 'bv2rebwf6zzsv341.cbetxkdyhwsb.us-east-1.rds.amazonaws.com';
+$username = 'rz3nsia6y0srzlc5';
+$password = 'u6oynzep12b8xxvr';
+$database = 'x25ni5fa58ohsdl3';
 $conn = new mysqli($url, $username, $password, $database);
 if (!$conn->set_charset("utf8")) {
   $conn->set_charset("utf8");
