@@ -67,11 +67,11 @@ if ($pagina == 'invitados') {
 
 <?php
 // Guarda todo el contenido a un archivo
-// $fp = fopen($archivoCache, 'w');
-// fwrite($fp, ob_get_contents());
-// fclose($fp);
+$fp = fopen($archivoCache, 'w');
+fwrite($fp, ob_get_contents());
+fclose($fp);
 // Enviar al navegador
-// ob_end_flush();
+ob_end_flush();
 ?>
 </body>
 
