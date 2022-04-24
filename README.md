@@ -1,11 +1,11 @@
 # GDLWEBCAMP
 
-GDLWEBCAMP es mi primer gran proyecto de desarrollo web. Se trata del proyecto final del curso: __Desarrollo Web Completo con HTML5, CSS3, JS AJAX PHP y MySQL__ realizado através de la plataforma __Udemy__.
+GDLWEBCAMP es mi primer gran proyecto de desarrollo web. Se trata del proyecto final del curso: __[Desarrollo Web Completo con HTML5, CSS3, JS AJAX PHP y MySQL](https://www.udemy.com/course/desarrollo-web-completo-con-html5-css3-js-php-y-mysql/)__ realizado através de la plataforma __Udemy__.
 
 Este proyecto se trata de una página web sobre una conferencia web llamada de igual forma que el proyecto: GDLWEBCAMP. Consta tanto de un frontend como de un backend para que la página sea 100% dinámica. La características de la página web y su respectiva área de control son:
 
 ## Frontend
-El frontend se encuentra desplegado en Heroku [en este enlace](http://gdlwebcampdb.herokuapp.com/index.php). Allí se abrirá primeramente el index.php.
+El frontend se encuentra desplegado en [Heroku](http://gdlwebcampdb.herokuapp.com/index.php). Allí se abrirá primeramente el index.php.
 
 La página se compone de 5 secciones totalmente dinámicas:
 * [Home](http://gdlwebcampdb.herokuapp.com/index.php)
