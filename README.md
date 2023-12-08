@@ -5,21 +5,21 @@ GDLWEBCAMP es mi primer gran proyecto de desarrollo web. Se trata del proyecto f
 Este proyecto se trata de una página web sobre una conferencia web llamada de igual forma que el proyecto: GDLWEBCAMP. Consta tanto de un frontend como de un backend para que la página sea 100% dinámica. La características de la página web y su respectiva área de control son:
 
 ## Frontend
-El frontend se encuentra desplegado en [Heroku](https://gdlwebcamp-app-78739c41b001.herokuapp.com/index.php). Allí se abrirá primeramente el index.php.
+El frontend se encuentra desplegado en [Heroku](https://app-gdlwebcamp.000webhostapp.com/index.php). Allí se abrirá primeramente el index.php.
 
 La página se compone de 5 secciones totalmente dinámicas:
-* [Home](https://gdlwebcamp-app-78739c41b001.herokuapp.com/index.php)
-* [Galería](https://gdlwebcamp-app-78739c41b001.herokuapp.com/galeria.php)
-* [Calendario](https://gdlwebcamp-app-78739c41b001.herokuapp.com/calendario.php)
-* [Invitados](https://gdlwebcamp-app-78739c41b001.herokuapp.com/invitados.php)
-* [Reservaciones](https://gdlwebcamp-app-78739c41b001.herokuapp.com/registro.php)
+* [Home](https://app-gdlwebcamp.000webhostapp.com/index.php)
+* [Galería](https://app-gdlwebcamp.000webhostapp.com/galeria.php)
+* [Calendario](https://app-gdlwebcamp.000webhostapp.com/calendario.php)
+* [Invitados](https://app-gdlwebcamp.000webhostapp.com/invitados.php)
+* [Reservaciones](https://app-gdlwebcamp.000webhostapp.com/registro.php)
 
-El frontend se encuentra maquetado en HTML5 con CSS3 sin ningún tipo de frameworks con el objetivo de aprender todo lo referente a CSS3 puro. Se hace uso de lógica mediante JavaScript con jQuery y PHP. Toda la información que se muestra en pantalla se imprime directamente desde una base de datos SQL desplegada también en Heroku con el objetivo de que la información agregada a la base de datos, desde el módulo de administración, se muestre en el frontend; es por esta razón que se usan técnicas de caché en PHP para evitar la sobreconsulta en la base de datos y almacenar una versión reciente en HTML que se mostrará al cliente para una carga más rápida de la página. Las fotos en __Galería__, los eventos en __Calendario__, la información y foto de los expositores en __Invitados__ cumplen con está descripción previa.
+El frontend se encuentra maquetado en HTML5 con CSS3 sin ningún tipo de frameworks con el objetivo de aprender todo lo`` referente a CSS3 puro. Se hace uso de lógica mediante JavaScript con jQuery y PHP. Toda la información que se muestra en pantalla se imprime directamente desde una base de datos SQL desplegada también en Heroku con el objetivo de que la información agregada a la base de datos, desde el módulo de administración, se muestre en el frontend; es por esta razón que se usan técnicas de caché en PHP para evitar la sobreconsulta en la base de datos y almacenar una versión reciente en HTML que se mostrará al cliente para una carga más rápida de la página. Las fotos en __Galería__, los eventos en __Calendario__, la información y foto de los expositores en __Invitados__ cumplen con está descripción previa.
 
 La parte de __Reservaciones__ contiene el formulario de registro a la conferencia incluyendo datos personales, tipo de boleto y conferencias a añadir.
 
 ## Backend
-En la sección [Admin](https://gdlwebcamp-app-78739c41b001.herokuapp.com/admin/login.php) se encuentra el panel para la administración de la información de la página web. Se encuentra maquetado con el template de Bootstrap AdminLTE. Para la parte lógica se usó JavaScript, AJAX y PHP para los modelos de CRUD a la base de datos. Se implementa el uso de sesiones en PHP para evitar la consulta y modificación de información a usuarios no loggeados. Así mismo, se implementa un superusuario capaz de crear a otros superusuarios y usuarios normales pero no en viceversa. 
+En la sección [Admin](https://app-gdlwebcamp.000webhostapp.com/admin/login.php) se encuentra el panel para la administración de la información de la página web. Se encuentra maquetado con el template de Bootstrap AdminLTE. Para la parte lógica se usó JavaScript, AJAX y PHP para los modelos de CRUD a la base de datos. Se implementa el uso de sesiones en PHP para evitar la consulta y modificación de información a usuarios no loggeados. Así mismo, se implementa un superusuario capaz de crear a otros superusuarios y usuarios normales pero no en viceversa. 
 
 Para loggearse al módulo de administración se puede usar las credenciales:
 * __Usuario:__ admin
