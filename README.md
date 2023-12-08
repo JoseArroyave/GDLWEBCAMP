@@ -5,7 +5,7 @@ GDLWEBCAMP es mi primer gran proyecto de desarrollo web. Se trata del proyecto f
 Este proyecto se trata de una página web sobre una conferencia web llamada de igual forma que el proyecto: GDLWEBCAMP. Consta tanto de un frontend como de un backend para que la página sea 100% dinámica. La características de la página web y su respectiva área de control son:
 
 ## Frontend
-El frontend se encuentra desplegado en [Heroku](https://app-gdlwebcamp.000webhostapp.com/index.php). Allí se abrirá primeramente el index.php.
+El frontend se encuentra desplegado en [.000webhost](https://app-gdlwebcamp.000webhostapp.com/index.php). Allí se abrirá primeramente el index.php.
 
 La página se compone de 5 secciones totalmente dinámicas:
 * [Home](https://app-gdlwebcamp.000webhostapp.com/index.php)
@@ -14,7 +14,7 @@ La página se compone de 5 secciones totalmente dinámicas:
 * [Invitados](https://app-gdlwebcamp.000webhostapp.com/invitados.php)
 * [Reservaciones](https://app-gdlwebcamp.000webhostapp.com/registro.php)
 
-El frontend se encuentra maquetado en HTML5 con CSS3 sin ningún tipo de frameworks con el objetivo de aprender todo lo`` referente a CSS3 puro. Se hace uso de lógica mediante JavaScript con jQuery y PHP. Toda la información que se muestra en pantalla se imprime directamente desde una base de datos SQL desplegada también en Heroku con el objetivo de que la información agregada a la base de datos, desde el módulo de administración, se muestre en el frontend; es por esta razón que se usan técnicas de caché en PHP para evitar la sobreconsulta en la base de datos y almacenar una versión reciente en HTML que se mostrará al cliente para una carga más rápida de la página. Las fotos en __Galería__, los eventos en __Calendario__, la información y foto de los expositores en __Invitados__ cumplen con está descripción previa.
+El frontend se encuentra maquetado en HTML5 con CSS3 sin ningún tipo de frameworks con el objetivo de aprender todo lo`` referente a CSS3 puro. Se hace uso de lógica mediante JavaScript con jQuery y PHP. Toda la información que se muestra en pantalla se imprime directamente desde una base de datos SQL desplegada también en .000webhost con el objetivo de que la información agregada a la base de datos, desde el módulo de administración, se muestre en el frontend; es por esta razón que se usan técnicas de caché en PHP para evitar la sobreconsulta en la base de datos y almacenar una versión reciente en HTML que se mostrará al cliente para una carga más rápida de la página. Las fotos en __Galería__, los eventos en __Calendario__, la información y foto de los expositores en __Invitados__ cumplen con está descripción previa.
 
 La parte de __Reservaciones__ contiene el formulario de registro a la conferencia incluyendo datos personales, tipo de boleto y conferencias a añadir.
 
@@ -25,7 +25,7 @@ Para loggearse al módulo de administración se puede usar las credenciales:
 * __Usuario:__ admin
 * __Contraseña__: admin
 
-Sin embargo, en el deploy mediante Heroku no se podrán modificar los datos dado que en los correspondientes modelos en PHP se termina forzosamente la ejecución de la inserción a la base de datos con el objetivo de proteger los datos. Sin embargo, para efectos prácticos, quien desee clonar el repositorio y ensayar con los datos recomiendo:
+Sin embargo, en el deploy mediante .000webhost no se podrán modificar los datos dado que en los correspondientes modelos en PHP se termina forzosamente la ejecución de la inserción a la base de datos con el objetivo de proteger los datos. Sin embargo, para efectos prácticos, quien desee clonar el repositorio y ensayar con los datos recomiendo:
 
 1. Desplegar una base de datos e importar el archivo sql contenido en la carpeta [SQL](https://github.com/JoseArroyave/GDLWEBCAMP/tree/main/sql) para tener los datos de prueba.
 2. En el archivo [bd_conexion.php](https://github.com/JoseArroyave/GDLWEBCAMP/blob/main/includes/functions/bd_conexion.php) modificar los datos de la conexión.
